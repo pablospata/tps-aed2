@@ -15,8 +15,8 @@ class NodoBinario{
     NodoBinario (int Elem){
         // Dato a almacenar
         dato = Elem;
-        //Definición de hijos
-        NodoBinario Hizq, Hder = null;
+        // Definición de hijos
+        this.Hizq = this.Hder = null;
     }
 }
 
@@ -73,6 +73,11 @@ class Arbol{
         }
         return result;
     }
+
+    
+    //------------------------------------------------------------------//
+    //---------------------- TP 2 - Consignas --------------------------//
+    //------------------------------------------------------------------//
     
     //Inorden Recursivo del arbol
     public void Inorden (NodoBinario Nodo) {        
@@ -91,6 +96,11 @@ class Arbol{
             return 1 + Math.max(Altura(Nodo.Hizq), Altura(Nodo.Hder));
     }
 }
+
+
+    //------------------------------------------------------------------//
+    //------------------------------------------------------------------//
+    //------------------------------------------------------------------//
 
 class ArbolBinario{
     public static void main(String[] ar) {
@@ -117,3 +127,12 @@ class ArbolBinario{
 //      25            45
 // 20       27          
 //
+
+
+//Resultado de la ejecución:
+//
+//Agregando la raiz 30 
+//
+// El árbol binario en In orden es: 
+// 20  25  27  30  45 
+// La altura del árbol es: 3
