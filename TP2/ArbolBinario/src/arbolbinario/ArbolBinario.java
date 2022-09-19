@@ -1,8 +1,8 @@
 //*********************************************************
 //* Archivo: ArbolBinario.java
-//Nombre: Nombre del alumno
-//Legajo: INFXXXXX
-//DNI: XXXXXXXX
+//Nombre: SPATA, Pablo Leonardo
+//Legajo: VINF10171
+//DNI: 34.114.622
 
 package arbolbinario;
 
