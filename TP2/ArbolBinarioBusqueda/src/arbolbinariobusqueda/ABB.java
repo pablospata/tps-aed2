@@ -58,13 +58,13 @@ class ABB {
         return raiz;
     }
     
-    int ValorMinimo(Nodo raiz)
-    {
-        
-//        int valor;
-//        if(raiz == null)
-//            valor = ValorMinimo(raiz.izquierda);
-//        \
+    // Valor mínimo
+    /* EXPLICACION
+    En este metodo necesitamos retornar el valor minimo de un subarbol, por lo tanto
+    lo recorrermos en forma recursiva hasta la hoja izquierda mas profunda
+    y como estamos trabajando sobre un ABB, dicho valor siempre es el valor minimo.    
+    */    
+    int ValorMinimo(Nodo raiz) {        
         if(raiz.izquierda == null)
             return raiz.clave;
         else
@@ -86,8 +86,7 @@ class ABB {
     constructura con el valor clave, y este Nodo será el que finalmente se
     insertara.
     Si el valor esta duplicado el nodo no se inserta y envia un mensaje en
-    pantalla.
-    
+    pantalla.    
     */
     Nodo insertar_Recursivo(Nodo raiz, int clave) {
         if(raiz == null)
@@ -203,7 +202,6 @@ class ABB {
         boolean ret_val = ABB.buscar (50);
         System.out.println("\nClave 50 en el ABB:" + ret_val );
         ret_val = ABB.buscar (12);
-        System.out.println("\nClave 12 en el ABB:" + ret_val );
-        
+        System.out.println("\nClave 12 en el ABB:" + ret_val );        
     }
 }
